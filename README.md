@@ -1,14 +1,12 @@
-# NumPy Learning and Practice
+# ML Data Foundations
 
-A structured NumPy learning repository focused on building strong
-numerical computing foundations for Machine Learning and Deep Learning.
+A structured learning repository focused on building numerical computing and data handling foundations for Machine Learning and Deep Learning.
 
-The repository contains concept-based practice files and a mini project
-that applies core NumPy operations to a simple dataset.
+This repository documents my practical learning through concept-based exercises, guided problem solving, and small projects.
 
 ## Repository Structure
 
-``` text
+```text
 numpy/
 ├── 01_array_fundamentals.py
 ├── 02_indexing_and_slicing.py
@@ -17,132 +15,172 @@ numpy/
 ├── 05_iteration.py
 ├── 06_join_and_split.py
 ├── 07_search_sort_filter.py
-└── projects/
-    └── student_performance_analyzer.py
+├── 08_student_performance_analyzer.py
+└── 09_random_and_distributions.py
 ```
 
-## Topics Covered
+## NumPy Topics Covered
 
-### 01 --- Array Fundamentals
+### 01 — Array Fundamentals
 
--   NumPy array creation
--   0D, 1D, 2D, and 3D arrays
--   Array dimensions
--   `ndim`
+* NumPy array creation
+* 0D, 1D, 2D, and 3D arrays
+* Array dimensions
+* `ndim`
 
-### 02 --- Indexing and Slicing
+### 02 — Indexing and Slicing
 
--   1D array indexing
--   2D array indexing
--   3D array indexing
--   Array slicing
--   Step slicing
--   Row and column selection
+* 1D, 2D, and 3D array indexing
+* Array slicing
+* Step slicing
+* Row and column selection
+* Multi-dimensional data access
 
-### 03 --- Data Types, Copy, and View
+### 03 — Data Types, Copy, and View
 
--   NumPy data types
--   Defining array data types
--   Type conversion with `astype()`
--   Copy vs view
--   Understanding array ownership with `base`
+* NumPy data types
+* Defining array data types
+* Type conversion with `astype()`
+* Copy vs view
+* Array ownership with `base`
 
-### 04 --- Shape and Reshape
+### 04 — Shape and Reshape
 
--   Array shape
--   Multi-dimensional shapes
--   Reshaping arrays
--   Converting between array structures
+* Array shape
+* Multi-dimensional shapes
+* Reshaping arrays
+* Converting between array structures
 
-### 05 --- Array Iteration
+### 05 — Array Iteration
 
--   Standard array iteration
--   Nested iteration
--   `nditer()`
--   Buffered iteration
--   `ndenumerate()`
+* Standard array iteration
+* Nested iteration
+* `nditer()`
+* Buffered iteration
+* `ndenumerate()`
 
-### 06 --- Join and Split
+### 06 — Join and Split
 
--   `concatenate()`
--   `stack()`
--   `hstack()`
--   `vstack()`
--   `dstack()`
--   `array_split()`
+* `concatenate()`
+* `stack()`
+* `hstack()`
+* `vstack()`
+* `dstack()`
+* `array_split()`
+* Equal and unequal array splitting
 
-### 07 --- Search, Sort, and Filter
+### 07 — Search, Sort, and Filter
 
--   `where()`
--   Odd and even value searching
--   `searchsorted()`
--   Numeric sorting
--   String sorting
--   Boolean sorting
--   Boolean filtering
+* `where()`
+* Searching array values
+* Odd and even value filtering
+* `searchsorted()`
+* Numerical and string sorting
+* Boolean masking
+* Array filtering
 
-## Mini Project --- Student Performance Analyzer
+## 08 — Student Performance Analyzer
 
-The Student Performance Analyzer applies NumPy fundamentals to a 2D
-student marks dataset.
+A NumPy mini project that applies core array operations to a structured 2D student marks dataset.
 
 ### Concepts Applied
 
--   Dataset representation using a 2D array
--   Dataset inspection with `ndim`, `shape`, `size`, and `dtype`
--   Row and column selection
--   2D slicing
--   Searching values with `where()`
--   Boolean masking and filtering
--   Sorting student marks
--   Protecting original data with `copy()`
--   Reshaping 2D data into 1D
--   Iterating with `nditer()`
--   Splitting data into groups
--   Rejoining datasets with `concatenate()`
+* Representing a dataset using a 2D NumPy array
+* Inspecting `ndim`, `shape`, `size`, and `dtype`
+* Selecting samples and columns
+* 2D array slicing
+* Searching values with `where()`
+* Boolean masking and filtering
+* Sorting numerical values
+* Protecting original data with `copy()`
+* Reshaping 2D data into 1D
+* Iterating through dataset values
+* Splitting data into groups
+* Rejoining arrays with `concatenate()`
 
-### Machine Learning Connection
+### Dataset Structure Concept
 
-The project introduces an important data representation pattern:
-
-``` text
+```text
 Rows    → Samples
 Columns → Features
 ```
 
-This same structure is commonly used when preparing datasets for Machine
-Learning.
+This structure is commonly used when representing numerical data for data analysis and Machine Learning workflows.
+
+## 09 — Random Generation and Probability Distributions
+
+### Random Generation
+
+* Random integers
+* Random floating-point values
+* Random arrays
+* Random sampling with `choice()`
+* Weighted probability sampling
+* Shuffle and permutation
+
+### Probability Distributions
+
+* Normal distribution
+* Binomial distribution
+* Poisson distribution
+* Uniform distribution
+* Logistic distribution
+* Multinomial distribution
+* Exponential distribution
+* Chi-square distribution
+* Rayleigh distribution
+* Pareto distribution
+* Zipf distribution
+
+### Reproducibility
+
+* Random seeds
+* Reproducible random sequences
+* NumPy `default_rng()`
+* Independent random generators
+
+### Distribution Visualization
+
+Basic distribution visualization is used to inspect distribution shape and data concentration.
 
 ## Learning Goal
 
-The goal of this repository is not only to practice NumPy syntax. It is
-to build the array manipulation and data handling skills required for:
+The goal of this repository is to develop practical foundations in:
 
--   Data preprocessing
--   Machine Learning
--   Deep Learning
--   Image data processing
--   CNN-based projects
+* Numerical computing
+* Array manipulation
+* Numerical dataset handling
+* Data preprocessing
+* Reproducible experiments
+* Machine Learning preparation
+* Deep Learning preparation
+* Image data processing foundations
 
-Goal
-↓
-Machine Learning Engineering foundations
+The focus is on understanding concepts and applying them through code rather than only memorizing library syntax.
 
-Python
-↓
+## Machine Learning Engineering Path
+
+```text
+Python Fundamentals
+        ↓
+Object-Oriented Programming
+        ↓
 NumPy
-↓
+        ↓
 Pandas
-↓
+        ↓
 Data Visualization
-↓
+        ↓
+Statistics for Machine Learning
+        ↓
 Machine Learning
-↓
+        ↓
 Deep Learning
-↓
+        ↓
 Computer Vision
-↓
-Production ML skills
+        ↓
+Production ML Skills
+```
 
 ## Career Focus
 
@@ -150,18 +188,29 @@ This repository is part of my Machine Learning Engineering learning path.
 
 My focus is on developing practical skills in:
 
-- Numerical computing
-- Data preprocessing
-- Exploratory data analysis
-- Machine Learning
-- Deep Learning
-- Computer Vision
-- Model training and evaluation
-- Reproducible ML experiments
+* Numerical computing
+* Data preprocessing
+* Exploratory data analysis
+* Machine Learning
+* Deep Learning
+* Computer Vision
+* Model training and evaluation
+* Reproducible ML experiments
+* Practical ML project development
 
-These foundations will be applied to multiple practical projects, including computer vision and medical image classification.
+These foundations will be applied across numerical data projects, Machine Learning applications, and Computer Vision projects.
 
-## Status
+## Current Status
 
-NumPy core array operations completed. Random distributions, universal
-functions, and ML-focused NumPy practice are the next learning stages.
+* Python fundamentals — Completed
+* Object-Oriented Programming — Completed
+* NumPy core array operations — Completed
+* NumPy mini project — Completed
+* NumPy random generation and distributions — Completed
+* NumPy universal functions (`ufunc`) — Next
+* NumPy real dataset practice — Planned
+* Pandas — Planned
+* Data visualization — Planned
+* Statistics for Machine Learning — Planned
+* Machine Learning — Planned
+* Deep Learning — Planned
