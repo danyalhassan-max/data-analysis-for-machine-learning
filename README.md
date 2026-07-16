@@ -1,10 +1,12 @@
 # ML Data Foundations
 
-A structured learning repository focused on building numerical computing and data handling foundations for Machine Learning and Deep Learning.
+A structured learning repository focused on building strong foundations in numerical computing, data manipulation, and preprocessing for Machine Learning and Deep Learning.
 
-This repository documents my practical learning through concept-based exercises, guided problem solving, and small projects.
+This repository documents my practical learning journey through concept-based exercises, guided problem solving, and mini projects using **NumPy** and **Pandas**.
 
-## Repository Structure
+---
+
+# Repository Structure
 
 ```text
 numpy/
@@ -16,149 +18,291 @@ numpy/
 ├── 06_join_and_split.py
 ├── 07_search_sort_filter.py
 ├── 08_student_performance_analyzer.py
-└── 09_random_and_distributions.py
+├── 09_random_and_distributions.py
+└── 10_universal_functions.py
+
+pandas/
+├── 01_series.py
+├── 02_dataframe.py
+├── 03_read_files.py
+├── 04_analyze_data.py
+├── 05_clean_empty_cells.py
+├── 06_clean_wrong_format.py
+├── 07_clean_wrong_data.py
+├── 08_remove_duplicates.py
+├── 09_correlation.py
+├── 10_plotting.py
+└── 11_student_data_cleaner.py
 ```
 
-## NumPy Topics Covered
+---
 
-### 01 — Array Fundamentals
+# NumPy Topics Covered
 
-* NumPy array creation
-* 0D, 1D, 2D, and 3D arrays
-* Array dimensions
-* `ndim`
+## 01 — Array Fundamentals
 
-### 02 — Indexing and Slicing
+- NumPy array creation
+- 0D, 1D, 2D and 3D arrays
+- Array dimensions
+- `ndim`
 
-* 1D, 2D, and 3D array indexing
-* Array slicing
-* Step slicing
-* Row and column selection
-* Multi-dimensional data access
+---
 
-### 03 — Data Types, Copy, and View
+## 02 — Indexing and Slicing
 
-* NumPy data types
-* Defining array data types
-* Type conversion with `astype()`
-* Copy vs view
-* Array ownership with `base`
+- 1D, 2D and 3D indexing
+- Array slicing
+- Step slicing
+- Row and column selection
+- Multi-dimensional indexing
 
-### 04 — Shape and Reshape
+---
 
-* Array shape
-* Multi-dimensional shapes
-* Reshaping arrays
-* Converting between array structures
+## 03 — Data Types, Copy and View
 
-### 05 — Array Iteration
+- NumPy data types
+- Type conversion using `astype()`
+- Copy vs View
+- Memory sharing
+- `base`
 
-* Standard array iteration
-* Nested iteration
-* `nditer()`
-* Buffered iteration
-* `ndenumerate()`
+---
 
-### 06 — Join and Split
+## 04 — Shape and Reshape
 
-* `concatenate()`
-* `stack()`
-* `hstack()`
-* `vstack()`
-* `dstack()`
-* `array_split()`
-* Equal and unequal array splitting
+- Array shape
+- Reshaping arrays
+- Flattening arrays
+- Multi-dimensional structures
 
-### 07 — Search, Sort, and Filter
+---
 
-* `where()`
-* Searching array values
-* Odd and even value filtering
-* `searchsorted()`
-* Numerical and string sorting
-* Boolean masking
-* Array filtering
+## 05 — Iteration
+
+- Standard iteration
+- Nested iteration
+- `nditer()`
+- Buffered iteration
+- `ndenumerate()`
+
+---
+
+## 06 — Join and Split
+
+- `concatenate()`
+- `stack()`
+- `hstack()`
+- `vstack()`
+- `dstack()`
+- `array_split()`
+
+---
+
+## 07 — Search, Sort and Filter
+
+- `where()`
+- `searchsorted()`
+- Sorting arrays
+- Boolean masking
+- Array filtering
+
+---
 
 ## 08 — Student Performance Analyzer
 
-A NumPy mini project that applies core array operations to a structured 2D student marks dataset.
+Mini project using NumPy.
 
 ### Concepts Applied
 
-* Representing a dataset using a 2D NumPy array
-* Inspecting `ndim`, `shape`, `size`, and `dtype`
-* Selecting samples and columns
-* 2D array slicing
-* Searching values with `where()`
-* Boolean masking and filtering
-* Sorting numerical values
-* Protecting original data with `copy()`
-* Reshaping 2D data into 1D
-* Iterating through dataset values
-* Splitting data into groups
-* Rejoining arrays with `concatenate()`
+- Dataset loading
+- 2D arrays
+- Dataset inspection
+- Array slicing
+- Statistics
+- Boolean masking
+- Normalization
+- Min-Max Scaling
+- Dataset export
 
-### Dataset Structure Concept
+---
 
-```text
-Rows    → Samples
-Columns → Features
-```
-
-This structure is commonly used when representing numerical data for data analysis and Machine Learning workflows.
-
-## 09 — Random Generation and Probability Distributions
+## 09 — Random Generation and Distributions
 
 ### Random Generation
 
-* Random integers
-* Random floating-point values
-* Random arrays
-* Random sampling with `choice()`
-* Weighted probability sampling
-* Shuffle and permutation
+- Random integers
+- Random floats
+- Random arrays
+- `choice()`
+- Weighted sampling
+- Shuffle
+- Permutation
 
 ### Probability Distributions
 
-* Normal distribution
-* Binomial distribution
-* Poisson distribution
-* Uniform distribution
-* Logistic distribution
-* Multinomial distribution
-* Exponential distribution
-* Chi-square distribution
-* Rayleigh distribution
-* Pareto distribution
-* Zipf distribution
+- Normal
+- Binomial
+- Poisson
+- Uniform
+- Logistic
+- Multinomial
+- Exponential
+- Chi-Square
+- Rayleigh
+- Pareto
+- Zipf
 
 ### Reproducibility
 
-* Random seeds
-* Reproducible random sequences
-* NumPy `default_rng()`
-* Independent random generators
+- Random Seed
+- `default_rng()`
 
-### Distribution Visualization
+---
 
-Basic distribution visualization is used to inspect distribution shape and data concentration.
+## 10 — Universal Functions (ufunc)
 
-## Learning Goal
+- Arithmetic Operations
+- Rounding Functions
+- Trigonometric Functions
+- Logarithmic Functions
+- Summation
+- Product
+- Difference
+- LCM & GCD
 
-The goal of this repository is to develop practical foundations in:
+---
 
-* Numerical computing
-* Array manipulation
-* Numerical dataset handling
-* Data preprocessing
-* Reproducible experiments
-* Machine Learning preparation
-* Deep Learning preparation
-* Image data processing foundations
+# Pandas Topics Covered
 
-The focus is on understanding concepts and applying them through code rather than only memorizing library syntax.
+## 01 — Series
 
-## Machine Learning Engineering Path
+- Creating Series
+- Custom Index
+- Dictionary to Series
+- Accessing Values
+
+---
+
+## 02 — DataFrames
+
+- Creating DataFrames
+- Row Selection
+- Column Selection
+- `.loc[]`
+
+---
+
+## 03 — Reading Files
+
+- CSV
+- JSON
+- Excel
+- Display Options
+
+---
+
+## 04 — Data Analysis
+
+- `head()`
+- `tail()`
+- `info()`
+- `shape`
+- `columns`
+- `dtypes`
+- `describe()`
+
+---
+
+## 05 — Cleaning Empty Cells
+
+- `dropna()`
+- `fillna()`
+- Mean
+- Median
+- Mode
+
+---
+
+## 06 — Cleaning Wrong Format
+
+- Date Conversion
+- `pd.to_datetime()`
+- Handling Invalid Dates
+
+---
+
+## 07 — Cleaning Wrong Data
+
+- Conditional Updates
+- `.loc[]`
+- Data Validation
+- Value Correction
+
+---
+
+## 08 — Removing Duplicates
+
+- `duplicated()`
+- `drop_duplicates()`
+- Dataset Export
+
+---
+
+## 09 — Correlation
+
+- Correlation Matrix
+- Numerical Feature Relationships
+
+---
+
+## 10 — Plotting
+
+- Line Plot
+- Scatter Plot
+- Histogram
+- Box Plot
+
+---
+
+## 11 — Student Data Cleaner
+
+Mini project using Pandas.
+
+### Concepts Applied
+
+- Reading Excel datasets
+- Dataset inspection
+- Missing value handling
+- Date formatting
+- Data cleaning
+- Invalid value correction
+- Duplicate removal
+- Exporting cleaned datasets
+- Exploratory Data Analysis (EDA)
+
+---
+
+# Learning Goals
+
+This repository is designed to build practical skills in:
+
+- Numerical Computing
+- Array Manipulation
+- Data Loading
+- Data Cleaning
+- Data Preprocessing
+- Exploratory Data Analysis
+- Feature Engineering Foundations
+- Reproducible Experiments
+- Machine Learning Preparation
+- Deep Learning Preparation
+- Computer Vision Preparation
+
+The focus is on understanding concepts through implementation instead of only memorizing library syntax.
+
+---
+
+# Machine Learning Engineering Roadmap
 
 ```text
 Python Fundamentals
@@ -169,7 +313,7 @@ NumPy
         ↓
 Pandas
         ↓
-Data Visualization
+Matplotlib
         ↓
 Statistics for Machine Learning
         ↓
@@ -182,35 +326,55 @@ Computer Vision
 Production ML Skills
 ```
 
-## Career Focus
+---
 
-This repository is part of my Machine Learning Engineering learning path.
+# Career Focus
 
-My focus is on developing practical skills in:
+This repository is part of my Machine Learning Engineering learning journey.
 
-* Numerical computing
-* Data preprocessing
-* Exploratory data analysis
-* Machine Learning
-* Deep Learning
-* Computer Vision
-* Model training and evaluation
-* Reproducible ML experiments
-* Practical ML project development
+Current focus areas include:
 
-These foundations will be applied across numerical data projects, Machine Learning applications, and Computer Vision projects.
+- Numerical Computing
+- Data Cleaning
+- Data Preprocessing
+- Exploratory Data Analysis
+- Data Visualization
+- Machine Learning
+- Deep Learning
+- Computer Vision
+- Model Training
+- Model Evaluation
+- Practical AI Project Development
 
-## Current Status
+---
 
-* Python fundamentals — Completed
-* Object-Oriented Programming — Completed
-* NumPy core array operations — Completed
-* NumPy mini project — Completed
-* NumPy random generation and distributions — Completed
-* NumPy universal functions (`ufunc`) — Next
-* NumPy real dataset practice — Planned
-* Pandas — Planned
-* Data visualization — Planned
-* Statistics for Machine Learning — Planned
-* Machine Learning — Planned
-* Deep Learning — Planned
+# Current Status
+
+- ✅ Python Fundamentals — Completed
+- ✅ Object-Oriented Programming — Completed
+- ✅ NumPy Fundamentals — Completed
+- ✅ NumPy Mini Project — Completed
+- ✅ NumPy Random & Distributions — Completed
+- ✅ NumPy Universal Functions — Completed
+- ✅ Pandas Fundamentals — Completed
+- ✅ Pandas Data Cleaning Project — Completed
+- ⏳ Matplotlib — In Progress
+- ⏳ Statistics for Machine Learning — Planned
+- ⏳ Machine Learning — Planned
+- ⏳ Deep Learning — Planned
+
+---
+
+# Future Projects
+
+- Student Performance Prediction
+- House Price Prediction
+- Diabetes Prediction
+- Heart Disease Prediction
+- Image Classification
+- Diabetic Retinopathy Detection
+- End-to-End Deep Learning Projects
+
+---
+
+**Goal:** Build a strong foundation in data science, machine learning, and deep learning by mastering core Python libraries and applying them to practical, real-world projects.
