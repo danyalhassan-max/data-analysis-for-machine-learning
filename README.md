@@ -31,7 +31,11 @@ pandas/
 ├── 07_clean_wrong_data.py
 ├── 08_remove_duplicates.py
 ├── 09_correlation.py
-├── 10_plotting.py
+├── ## 10 — Plotting
+- Line Plot
+- Scatter Plot
+- Histogram
+- Box Plot
 └── 11_student_data_cleaner.py
 ```
 
